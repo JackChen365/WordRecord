@@ -1,0 +1,46 @@
+body{
+    width: 480px;
+    height: 420px;
+    min-height: 420px;
+}
+.form-content{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.word-header {
+    border-bottom: 2px solid #EFEFEF;
+}
+.word-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.query-status{
+    margin-left: 12px;
+}
+.word-info{
+    padding: 12px;
+}
+
+.word-example{
+    padding: 12px;
+}
+
+.mdl-textfield__label:after {
+    background-color: #6e8696;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color: #6e8696;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: #fff;
+    background-color: #6e8696;
+}
+
+.mdl-layout__header {
+    background-color: #6e8696;
+}

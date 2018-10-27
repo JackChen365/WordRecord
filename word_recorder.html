@@ -1,0 +1,45 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="css/material.min.css">
+            <link rel="stylesheet" href="css/popup_base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/material.min.js"></script>
+            <script src="js/recorder.js"></script>
+    </head>
+    <body>
+         <!-- Textfield with Floating Label -->
+         <div class="form-content">
+                <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="username">
+                        <label class="mdl-textfield__label" for="username">UserName</label>
+                        </div>
+                    </form>
+                    <!-- Numeric Textfield with Floating Label -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="password" id="password">
+                        <label class="mdl-textfield__label" for="password">Password</label>
+                        <span class="mdl-textfield__error">Input user password!</span>
+                        </div>
+                    </form>
+            
+                    <!-- Accent-colored raised button with ripple -->
+                    <button class="sign-in-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Sign in
+                    </button>
+         </div>
+         <div class="user-page-info">
+            <div class="word-header mdl-card__title mdl-card--expand">
+              <h2 class="word-title mdl-card__title-text"></h2>
+              <i class="query-status material-icons">cloud_off</i>
+            </div>
+            <div class="word-phonetic mdl-card__supporting-text"></div>
+            <div class="word-info"></div>
+            <div class="word-example"></div>
+          </div>
+
+      
+    </body>
+</html>

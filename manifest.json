@@ -1,0 +1,48 @@
+{
+    "name":"Word recorder",
+    "description":"an user word query recorder",
+    "version":"1.7",
+    "manifest_version":2,
+    "browser_action":{
+        "default_popup":"word_recorder.html",
+        "default_icon":"image/ic_extension.png"
+    },
+    "commands":{
+        "_execute_browser_action":{
+            "suggested_key":{
+                "default":"Ctrl+Shift+F",
+                "mac":"MacCtrl+Shift+F"
+            },
+            "description":"Opens recorder main"
+        }
+    },
+    "background": {
+        "scripts": ["js/jquery.min.js","js/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://fanyi.baidu.com/*"],
+            "css": ["css/material.min.css","css/translate_ui.css"],
+            "js": ["js/jquery.min.js","js/material.min.js","js/translate_baidu.js","js/recorder.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "js/*.js",
+        "css/*.css",
+        "user_sign_in.html",
+        "user_setting.html",
+        "js/material.min.js"
+    ],
+    "externally_connectable": {
+        "matches": ["https://fanyi.baidu.com/*"]
+    },
+    "permissions":[
+        "tabs",
+        "downloads",
+        "cookies",
+        "storage",
+        "https://fanyi.baidu.com/",
+        "http://192.168.3.8:8080/"
+    ]
+    
+}
